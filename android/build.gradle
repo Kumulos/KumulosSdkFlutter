@@ -1,0 +1,46 @@
+group 'com.kumulos.flutter.kumulos_sdk_flutter'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    debugApi 'com.kumulos.android:kumulos-android-debug:12.0.0'
+    releaseApi 'com.kumulos.android:kumulos-android-release:12.0.0'
+}

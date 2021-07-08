@@ -1,0 +1,99 @@
+PODS:
+  - Flutter (1.0.0)
+  - kumulos_sdk_flutter (0.0.1):
+    - Flutter
+    - KumulosSdkObjectiveC (= 4.5.2)
+  - KumulosKSCrash (1.15.21-kumulos3):
+    - KumulosKSCrash/Installations (= 1.15.21-kumulos3)
+  - KumulosKSCrash/Installations (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting
+  - KumulosKSCrash/Recording (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording/Tools (= 1.15.21-kumulos3)
+  - KumulosKSCrash/Recording/Tools (1.15.21-kumulos3)
+  - KumulosKSCrash/Reporting (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/MessageUI (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Sinks (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Tools (= 1.15.21-kumulos3)
+  - KumulosKSCrash/Reporting/Filters (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Alert (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/AppleFmt (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/Base (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/Basic (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/GZip (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/JSON (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/Sets (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/Stringify (= 1.15.21-kumulos3)
+    - KumulosKSCrash/Reporting/Filters/Tools (= 1.15.21-kumulos3)
+  - KumulosKSCrash/Reporting/Filters/Alert (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/AppleFmt (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/Base (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+  - KumulosKSCrash/Reporting/Filters/Basic (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/GZip (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/JSON (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/Sets (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/AppleFmt
+    - KumulosKSCrash/Reporting/Filters/Base
+    - KumulosKSCrash/Reporting/Filters/Basic
+    - KumulosKSCrash/Reporting/Filters/GZip
+    - KumulosKSCrash/Reporting/Filters/JSON
+    - KumulosKSCrash/Reporting/Filters/Stringify
+  - KumulosKSCrash/Reporting/Filters/Stringify (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters/Base
+  - KumulosKSCrash/Reporting/Filters/Tools (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+  - KumulosKSCrash/Reporting/MessageUI (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+  - KumulosKSCrash/Reporting/Sinks (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+    - KumulosKSCrash/Reporting/Filters
+    - KumulosKSCrash/Reporting/Tools
+  - KumulosKSCrash/Reporting/Tools (1.15.21-kumulos3):
+    - KumulosKSCrash/Recording
+  - KumulosSdkObjectiveC (4.5.2):
+    - KumulosKSCrash (= 1.15.21-kumulos3)
+  - KumulosSdkObjectiveCExtension (4.5.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - kumulos_sdk_flutter (from `.symlinks/plugins/kumulos_sdk_flutter/ios`)
+  - KumulosSdkObjectiveCExtension (= 4.5.2)
+
+SPEC REPOS:
+  trunk:
+    - KumulosKSCrash
+    - KumulosSdkObjectiveC
+    - KumulosSdkObjectiveCExtension
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  kumulos_sdk_flutter:
+    :path: ".symlinks/plugins/kumulos_sdk_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  kumulos_sdk_flutter: 0333e476859a6edbd0d70a26e369a85804895c7b
+  KumulosKSCrash: 47792ccb0a573520cf22188c9612cfa95291f0a3
+  KumulosSdkObjectiveC: a14c1aac99d21ce8dbb2f915305044787322d13b
+  KumulosSdkObjectiveCExtension: c282d9043d657ae3c1b64008b68e9c390d3375c4
+
+PODFILE CHECKSUM: 7007206449734b5f68b743d30fa0e51219d1c30c
+
+COCOAPODS: 1.10.1
