@@ -1,3 +1,7 @@
+## 1.1.0
+
+Update the Android SDK references to include channel support
+
 ## 1.0.0
 
 Initial release of Kumulos SDK for Flutter, including all features:
