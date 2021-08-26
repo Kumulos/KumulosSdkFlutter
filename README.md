@@ -8,18 +8,18 @@ Add the following dependency to your `pubspec.yaml` and run `pub install`:
 
 ```yaml
 dependencies:
-  kumulos_sdk_flutter: 1.1.0
+  kumulos_sdk_flutter: 1.2.0
 ```
 
 Next, create a `kumulos.json` file in your project's root directory with Kumulos configuration:
 
 ```json
 {
-    "apiKey": "YOUR_API_KEY",
-    "secretKey": "YOUR_SECRET_KEY",
-    "enableCrashReporting": false,
-    "inAppConsentStrategy": "in-app-disabled",
-    "enableDeferredDeepLinking": false
+  "apiKey": "YOUR_API_KEY",
+  "secretKey": "YOUR_SECRET_KEY",
+  "enableCrashReporting": false,
+  "inAppConsentStrategy": "in-app-disabled",
+  "enableDeferredDeepLinking": false
 }
 ```
 

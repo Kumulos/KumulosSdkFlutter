@@ -38,5 +38,5 @@ post_install do |installer|
 end
 
 target 'KumulosNotificationServiceExtension' do
-  pod 'KumulosSdkObjectiveCExtension', '4.5.2'
+  pod 'KumulosSdkObjectiveCExtension', '4.6.0'
 end

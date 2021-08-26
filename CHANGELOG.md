@@ -1,3 +1,7 @@
+## 1.2.0
+
+Add probability-based matching for Web-to-App Banners
+
 ## 1.1.0
 
 Update the Android SDK references to include channel support

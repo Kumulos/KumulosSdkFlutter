@@ -2,7 +2,7 @@
 #import <KumulosSDK/KumulosSDK.h>
 @import CoreLocation;
 
-static const NSString* KSFlutterSdkVersion = @"1.1.0";
+static const NSString* KSFlutterSdkVersion = @"1.2.0";
 
 #pragma mark - Event bridge helper
 
