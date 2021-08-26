@@ -2,7 +2,7 @@ PODS:
   - Flutter (1.0.0)
   - kumulos_sdk_flutter (0.0.1):
     - Flutter
-    - KumulosSdkObjectiveC (= 4.5.2)
+    - KumulosSdkObjectiveC (= 4.6.0)
   - KumulosKSCrash (1.15.21-kumulos3):
     - KumulosKSCrash/Installations (= 1.15.21-kumulos3)
   - KumulosKSCrash/Installations (1.15.21-kumulos3):
@@ -66,14 +66,14 @@ PODS:
     - KumulosKSCrash/Reporting/Tools
   - KumulosKSCrash/Reporting/Tools (1.15.21-kumulos3):
     - KumulosKSCrash/Recording
-  - KumulosSdkObjectiveC (4.5.2):
+  - KumulosSdkObjectiveC (4.6.0):
     - KumulosKSCrash (= 1.15.21-kumulos3)
-  - KumulosSdkObjectiveCExtension (4.5.2)
+  - KumulosSdkObjectiveCExtension (4.6.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - kumulos_sdk_flutter (from `.symlinks/plugins/kumulos_sdk_flutter/ios`)
-  - KumulosSdkObjectiveCExtension (= 4.5.2)
+  - KumulosSdkObjectiveCExtension (= 4.6.0)
 
 SPEC REPOS:
   trunk:
