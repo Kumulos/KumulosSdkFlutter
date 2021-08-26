@@ -35,7 +35,7 @@ import io.flutter.plugin.common.EventChannel;
 public class KumulosInitProvider extends ContentProvider {
     private static final String TAG = KumulosInitProvider.class.getName();
 
-    private static final String SDK_VERSION = "1.1.0";
+    private static final String SDK_VERSION = "1.2.0";
     private static final int RUNTIME_TYPE = 9;
     private static final int SDK_TYPE = 11;
 
