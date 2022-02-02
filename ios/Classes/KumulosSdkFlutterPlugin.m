@@ -2,7 +2,7 @@
 #import <KumulosSDK/KumulosSDK.h>
 @import CoreLocation;
 
-static const NSString* KSFlutterSdkVersion = @"1.2.0";
+static const NSString* KSFlutterSdkVersion = @"1.2.1";
 
 #pragma mark - Event bridge helper
 
@@ -199,7 +199,10 @@ static const NSString* KSFlutterSdkVersion = @"1.2.0";
         return;
     } else if ([@"associateUserWithInstall" isEqualToString:call.method]) {
         NSString* identifier = call.arguments[@"id"];
-        NSDictionary* attributes = call.arguments[@"attrs"];
+        NSDictionary* attributes = nil;
+        if (call.arguments[@"attrs"] != NSNull.null){
+            attributes = call.arguments[@"attrs"];
+        }
 
         if (attributes) {
           [Kumulos.shared associateUserWithInstall:identifier attributes:attributes];
@@ -216,13 +219,16 @@ static const NSString* KSFlutterSdkVersion = @"1.2.0";
         return;
     } else if ([@"trackEvent" isEqualToString:call.method]) {
         NSString* type = call.arguments[@"type"];
-        NSDictionary* props = call.arguments[@"props"];
         NSNumber* immediateFlush = call.arguments[@"flush"];
+        NSDictionary* props = nil;
+        if (call.arguments[@"props"] != NSNull.null){
+            props = call.arguments[@"props"];
+        }
 
         if (immediateFlush.boolValue) {
-          [Kumulos.shared trackEventImmediately:type withProperties:props];
+            [Kumulos.shared trackEventImmediately:type withProperties:props];
         } else {
-          [Kumulos.shared trackEvent:type withProperties:props];
+            [Kumulos.shared trackEvent:type withProperties:props];
         }
 
         result(nil);
