@@ -199,7 +199,10 @@ static const NSString* KSFlutterSdkVersion = @"1.2.1";
         return;
     } else if ([@"associateUserWithInstall" isEqualToString:call.method]) {
         NSString* identifier = call.arguments[@"id"];
-        NSDictionary* attributes = call.arguments[@"attrs"];
+        NSDictionary* attributes = nil;
+        if (call.arguments[@"attrs"] != NSNull.null){
+            attributes = call.arguments[@"attrs"];
+        }
 
         if (attributes) {
           [Kumulos.shared associateUserWithInstall:identifier attributes:attributes];
