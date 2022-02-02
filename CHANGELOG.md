@@ -1,3 +1,8 @@
+## 1.2.1
+
+- Fix: event properties not tracked on android
+- Fix: events without properties not tracked on iOS
+
 ## 1.2.0
 
 Add probability-based matching for Web-to-App Banners

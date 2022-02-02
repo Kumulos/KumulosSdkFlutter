@@ -8,7 +8,7 @@ Add the following dependency to your `pubspec.yaml` and run `pub install`:
 
 ```yaml
 dependencies:
-  kumulos_sdk_flutter: 1.2.0
+  kumulos_sdk_flutter: 1.2.1
 ```
 
 Next, create a `kumulos.json` file in your project's root directory with Kumulos configuration:
