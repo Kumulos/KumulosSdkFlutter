@@ -144,8 +144,13 @@ public class KumulosSdkFlutterPlugin implements FlutterPlugin, MethodCallHandler
                 break;
             case "trackEvent":
                 String type = call.argument("type");
-                JSONObject props = null;
                 Boolean flush = call.argument("flush");
+
+                Map<String, Object> propsMap = call.argument("props");
+                JSONObject props = null;
+                if (null != propsMap) {
+                    props = new JSONObject(propsMap);
+                }
 
                 if (flush) {
                     Kumulos.trackEventImmediately(context, type, props);
